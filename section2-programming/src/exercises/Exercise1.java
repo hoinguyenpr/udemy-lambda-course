@@ -1,8 +1,12 @@
 package exercises;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Arrays;
 import java.util.List;
-
+/*
+* Print Only Odd Numbers from the List
+* */
 public class Exercise1 {
 
     public static void main(String[] args) {
@@ -13,7 +17,7 @@ public class Exercise1 {
 
     }
 
-    public static void printOddNumber(List<Integer> numbers){
+    public static void printOddNumber(@NotNull List<Integer> numbers){
 
         numbers.stream()
                 .filter(integer -> integer % 2 != 0)
